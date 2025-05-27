@@ -89,7 +89,7 @@ void imprime(Relacao relacao ){
 void operacao_composicao(Relacao relacao){
     int op1,op2,check;
     system("cls");
-    printf("Digite os numero das relacao (no formato: R S)\n");
+    printf("Digite os numero das relacoes (no formato: R S e elas devem ser compativeis)\n");
     scanf("%d",&op1);
     scanf("%d",&op2);
     getchar();
