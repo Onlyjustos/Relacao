@@ -17,7 +17,7 @@ int valida_nome(Relacao,char);
 int main(){
     Relacao relacao;
     int op;  
-    system("clean");
+    system("clear");
     fflush(stdin);
     while(1){
         printf("Digite a opcao:\nInserir relacao(1);\nImprimir relacao (2);\nOperacao de relacao(3);\nOperacao de inversao(4);\nSair(5);\n");
@@ -47,7 +47,7 @@ int main(){
 
 void insere(Relacao relacao){
     char nome;
-    system("clean");
+    system("clear");
     
     
     while(!valida_nome(relacao,nome)){
@@ -68,13 +68,13 @@ void insere(Relacao relacao){
         if(quebrar != ',') // se o cabra nao digitar ',' o baguio sai do loop
             break;
     }
-    system("clean");
+    system("clear");
     quantidade++;
     
     
 }
 void imprime(Relacao relacao ){
-    system("clean");
+    system("clear");
     printf("RELACOES:\n");
     for(int i=0;i<quantidade;i++){
         printf("(%d) %c : ",i+1,relacao[i].nome);
@@ -88,7 +88,7 @@ void imprime(Relacao relacao ){
 }
 void operacao_composicao(Relacao relacao){
     int op1,op2,check;
-    system("clean");
+    system("clear");
     printf("Digite os numero das relacao (no formato: R S)\n");
     scanf("%d",&op1);
     scanf("%d",&op2);
@@ -109,7 +109,7 @@ void operacao_composicao(Relacao relacao){
 }
 void operacao_inversao(Relacao relacao){
     int op;
-    system("clean");
+    system("clear");
     printf("Digite o numero da relacao\n");
     scanf("%d",&op);
     op--;
@@ -120,7 +120,7 @@ void operacao_inversao(Relacao relacao){
         relacao[op].y[i] = temp;
         
     }
-    system("clean");
+    system("clear");
     printf("inversao feita com sucesso ;)\n\n");
     
     
